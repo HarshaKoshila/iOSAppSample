@@ -13,6 +13,8 @@
 		92724324212147B800E9AD01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92724322212147B800E9AD01 /* Main.storyboard */; };
 		92724326212147B800E9AD01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92724325212147B800E9AD01 /* Assets.xcassets */; };
 		92724329212147B800E9AD01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92724327212147B800E9AD01 /* LaunchScreen.storyboard */; };
+		927243332121615B00E9AD01 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927243322121615B00E9AD01 /* WeightViewController.swift */; };
+		9272433B2121757E00E9AD01 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272433A2121757E00E9AD01 /* Weight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		92724325212147B800E9AD01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92724328212147B800E9AD01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9272432A212147B800E9AD01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		927243322121615B00E9AD01 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
+		9272433A2121757E00E9AD01 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		9272431B212147B800E9AD01 /* IOSAppSample */ = {
 			isa = PBXGroup;
 			children = (
+				92724334212174EF00E9AD01 /* Model */,
+				927243312121612700E9AD01 /* View Controller */,
 				9272431C212147B800E9AD01 /* AppDelegate.swift */,
 				9272431E212147B800E9AD01 /* FirstViewController.swift */,
 				92724320212147B800E9AD01 /* SecondViewController.swift */,
@@ -65,6 +71,22 @@
 				9272432A212147B800E9AD01 /* Info.plist */,
 			);
 			path = IOSAppSample;
+			sourceTree = "<group>";
+		};
+		927243312121612700E9AD01 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				927243322121615B00E9AD01 /* WeightViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		92724334212174EF00E9AD01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9272433A2121757E00E9AD01 /* Weight.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +121,7 @@
 				TargetAttributes = {
 					92724318212147B800E9AD01 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,6 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9272433B2121757E00E9AD01 /* Weight.swift in Sources */,
+				927243332121615B00E9AD01 /* WeightViewController.swift in Sources */,
 				92724321212147B800E9AD01 /* SecondViewController.swift in Sources */,
 				9272431D212147B800E9AD01 /* AppDelegate.swift in Sources */,
 				9272431F212147B800E9AD01 /* FirstViewController.swift in Sources */,
@@ -278,11 +303,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IOSAppSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lab.IOSAppSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -292,6 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IOSAppSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
