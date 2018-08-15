@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9229224A2124656E00992B66 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922922492124656E00992B66 /* Temperature.swift */; };
+		9229224C2124685400992B66 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9229224B2124685400992B66 /* Distance.swift */; };
+		9229225021246DCD00992B66 /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9229224F21246DCD00992B66 /* Speed.swift */; };
 		9272431D212147B800E9AD01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272431C212147B800E9AD01 /* AppDelegate.swift */; };
 		9272431F212147B800E9AD01 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272431E212147B800E9AD01 /* FirstViewController.swift */; };
 		92724321212147B800E9AD01 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92724320212147B800E9AD01 /* SecondViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		922922492124656E00992B66 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		9229224B2124685400992B66 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
+		9229224F21246DCD00992B66 /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
 		92724319212147B800E9AD01 /* IOSAppSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSAppSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9272431C212147B800E9AD01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9272431E212147B800E9AD01 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				9272433A2121757E00E9AD01 /* Weight.swift */,
+				922922492124656E00992B66 /* Temperature.swift */,
+				9229224B2124685400992B66 /* Distance.swift */,
+				9229224F21246DCD00992B66 /* Speed.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,9 +173,12 @@
 			files = (
 				9272433B2121757E00E9AD01 /* Weight.swift in Sources */,
 				927243332121615B00E9AD01 /* WeightViewController.swift in Sources */,
+				9229224C2124685400992B66 /* Distance.swift in Sources */,
+				9229224A2124656E00992B66 /* Temperature.swift in Sources */,
 				92724321212147B800E9AD01 /* SecondViewController.swift in Sources */,
 				9272431D212147B800E9AD01 /* AppDelegate.swift in Sources */,
 				9272431F212147B800E9AD01 /* FirstViewController.swift in Sources */,
+				9229225021246DCD00992B66 /* Speed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

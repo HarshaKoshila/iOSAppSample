@@ -9,7 +9,7 @@
 import UIKit
 
 class WeightViewController: UIViewController {
-
+    
     @IBOutlet weak var gramTextField: UITextField!
     @IBOutlet weak var kilogramTextField: UITextField!
     @IBOutlet weak var poundTextField: UITextField!
@@ -25,43 +25,47 @@ class WeightViewController: UIViewController {
         poundTextField.text = ""
         ounceTextField.text = ""
     }
-  
-
-    @IBAction func onChangeGramText(_ sender: Any) {
-//        var weight = Weight(input:Double(gramTextField.text!)!)
-//        kilogramTextField.text = "\(weight.gramToKg())"
-//        poundTextField.text = "\(weight.gramToPound())"
-//        ounceTextField.text = "\(weight.gramToOunce())"
-        
-        kilogramTextField.text = gramTextField.text
-    }
-
     
-    @IBAction func onChangeKgText(_ sender: Any) {
-//        var weight = Weight(input:Double(gramTextField.text!)!)
-//        gramTextField.text = "\(weight.KgToGram())"
-//        poundTextField.text = "\(weight.KgToPond())"
-//        ounceTextField.text = "\(weight.KgToOunce())"
+    
+    @IBAction func onChangeGramText(_ sender: Any) {
+        if(gramTextField.text != nil && gramTextField.text?.isEmpty != true){
+            let weight = Weight(input:Double(gramTextField.text!)!)
+            kilogramTextField.text = "\(weight.gramToKg())"
+            poundTextField.text = "\(weight.gramToPound())"
+            ounceTextField.text = "\(weight.gramToOunce())"
+        }
         
-        gramTextField.text = kilogramTextField.text
     }
+    
+    @IBAction func onChangeKilogram(_ sender: Any) {
+        if(kilogramTextField.text != nil && kilogramTextField.text?.isEmpty != true){
+            let weight = Weight(input:Double(kilogramTextField.text!)!)
+            gramTextField.text = "\(weight.KgToGram())"
+            poundTextField.text = "\(weight.KgToPond())"
+            ounceTextField.text = "\(weight.KgToOunce())"
+        }
+    }
+    
     
     
     @IBAction func onChangePoundText(_ sender: Any) {
-        let weight = Weight(input:Double(gramTextField.text!)!)
-        kilogramTextField.text = "\(weight.poundToKg())"
-        gramTextField.text = "\(weight.poundToGram())"
-        ounceTextField.text = "\(weight.poundToOunce())"
+        if(poundTextField.text != nil && poundTextField.text?.isEmpty != true){
+            let weight = Weight(input:Double(poundTextField.text!)!)
+            kilogramTextField.text = "\(weight.poundToKg())"
+            gramTextField.text = "\(weight.poundToGram())"
+            ounceTextField.text = "\(weight.poundToOunce())"
+        }
     }
-
+    
     
     @IBAction func onChangeOuncetext(_ sender: Any) {
-        let weight = Weight(input:Double(gramTextField.text!)!)
-        kilogramTextField.text = "\(weight.ounceToKg())"
-        poundTextField.text = "\(weight.ounceToPound())"
-        gramTextField.text = "\(weight.ounceToGram())"
+        if(ounceTextField.text != nil && ounceTextField.text?.isEmpty != true){
+            let weight = Weight(input:Double(ounceTextField.text!)!)
+            kilogramTextField.text = "\(weight.ounceToKg())"
+            poundTextField.text = "\(weight.ounceToPound())"
+            gramTextField.text = "\(weight.ounceToGram())"
+        }
     }
-
     
     
     

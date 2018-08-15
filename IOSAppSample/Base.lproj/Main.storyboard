@@ -53,8 +53,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
-                                    <action selector="gramTextField:" destination="ymi-J0-jh8" eventType="editingDidEnd" id="3rp-Uo-EfH"/>
-                                    <action selector="gramc:" destination="ymi-J0-jh8" eventType="editingDidEnd" id="3zi-3W-1IH"/>
                                     <action selector="onChangeGramText:" destination="9pv-A4-QxB" eventType="editingChanged" id="stS-s6-0X5"/>
                                 </connections>
                             </textField>
@@ -65,11 +63,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
-                                    <action selector="huyguy:" destination="ymi-J0-jh8" eventType="editingDidEnd" id="Tzg-UX-o73"/>
-                                    <action selector="jhbjhb:" destination="ymi-J0-jh8" eventType="editingDidEnd" id="M2B-pV-ZJ3"/>
-                                    <action selector="onChange:" destination="9pv-A4-QxB" eventType="editingChanged" id="zAG-9w-zdb"/>
-                                    <action selector="onChangeKg:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="4yy-D5-otm"/>
-                                    <action selector="onChangeKgText:" destination="9pv-A4-QxB" eventType="editingChanged" id="3qB-gR-vH0"/>
+                                    <action selector="onChangeKilogram:" destination="9pv-A4-QxB" eventType="editingChanged" id="42e-1u-Q6j"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WPR-qt-cNe">
@@ -116,7 +110,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-                <exit id="ymi-J0-jh8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1084" y="-1172"/>
         </scene>
