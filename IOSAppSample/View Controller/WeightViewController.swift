@@ -14,6 +14,7 @@ class WeightViewController: UIViewController {
     @IBOutlet weak var kilogramTextField: UITextField!
     @IBOutlet weak var poundTextField: UITextField!
     @IBOutlet weak var ounceTextField: UITextField!
+    @IBOutlet var mainScreen: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +29,8 @@ class WeightViewController: UIViewController {
     
     
     @IBAction func onChangeGramText(_ sender: Any) {
-        if(gramTextField.text != nil && gramTextField.text?.isEmpty != true){
-            let weight = Weight(input:Double(gramTextField.text!)!)
+        if(gramTextField.text != nil && gramTextField.text?.isEmpty != true){ //Check nil value becase app crash
+            let weight = Weight(input:Double(gramTextField.text!)!)   //Create a new object of Weight class
             kilogramTextField.text = "\(weight.gramToKg())"
             poundTextField.text = "\(weight.gramToPound())"
             ounceTextField.text = "\(weight.gramToOunce())"
@@ -38,7 +39,7 @@ class WeightViewController: UIViewController {
     }
     
     @IBAction func onChangeKilogram(_ sender: Any) {
-        if(kilogramTextField.text != nil && kilogramTextField.text?.isEmpty != true){
+        if(kilogramTextField.text != nil && kilogramTextField.text?.isEmpty != true){ //Check nil value becase app crash
             let weight = Weight(input:Double(kilogramTextField.text!)!)
             gramTextField.text = "\(weight.KgToGram())"
             poundTextField.text = "\(weight.KgToPond())"
@@ -49,7 +50,7 @@ class WeightViewController: UIViewController {
     
     
     @IBAction func onChangePoundText(_ sender: Any) {
-        if(poundTextField.text != nil && poundTextField.text?.isEmpty != true){
+        if(poundTextField.text != nil && poundTextField.text?.isEmpty != true){ //Check nil value becase app crash
             let weight = Weight(input:Double(poundTextField.text!)!)
             kilogramTextField.text = "\(weight.poundToKg())"
             gramTextField.text = "\(weight.poundToGram())"
@@ -59,7 +60,7 @@ class WeightViewController: UIViewController {
     
     
     @IBAction func onChangeOuncetext(_ sender: Any) {
-        if(ounceTextField.text != nil && ounceTextField.text?.isEmpty != true){
+        if(ounceTextField.text != nil && ounceTextField.text?.isEmpty != true){  //Check nil value becase app crash
             let weight = Weight(input:Double(ounceTextField.text!)!)
             kilogramTextField.text = "\(weight.ounceToKg())"
             poundTextField.text = "\(weight.ounceToPound())"

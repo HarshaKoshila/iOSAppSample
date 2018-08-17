@@ -18,6 +18,9 @@
 		92724329212147B800E9AD01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92724327212147B800E9AD01 /* LaunchScreen.storyboard */; };
 		927243332121615B00E9AD01 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927243322121615B00E9AD01 /* WeightViewController.swift */; };
 		9272433B2121757E00E9AD01 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272433A2121757E00E9AD01 /* Weight.swift */; };
+		9289FC1F212675D10029265A /* TemperatureVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9289FC1E212675D10029265A /* TemperatureVeiwController.swift */; };
+		9289FC21212684130029265A /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9289FC20212684130029265A /* DistanceViewController.swift */; };
+		9289FC23212688740029265A /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9289FC22212688740029265A /* SpeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		9272432A212147B800E9AD01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		927243322121615B00E9AD01 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		9272433A2121757E00E9AD01 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		9289FC1E212675D10029265A /* TemperatureVeiwController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureVeiwController.swift; sourceTree = "<group>"; };
+		9289FC20212684130029265A /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
+		9289FC22212688740029265A /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				927243322121615B00E9AD01 /* WeightViewController.swift */,
+				9289FC1E212675D10029265A /* TemperatureVeiwController.swift */,
+				9289FC20212684130029265A /* DistanceViewController.swift */,
+				9289FC22212688740029265A /* SpeedViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -174,10 +183,13 @@
 				9272433B2121757E00E9AD01 /* Weight.swift in Sources */,
 				927243332121615B00E9AD01 /* WeightViewController.swift in Sources */,
 				9229224C2124685400992B66 /* Distance.swift in Sources */,
+				9289FC21212684130029265A /* DistanceViewController.swift in Sources */,
 				9229224A2124656E00992B66 /* Temperature.swift in Sources */,
+				9289FC1F212675D10029265A /* TemperatureVeiwController.swift in Sources */,
 				92724321212147B800E9AD01 /* SecondViewController.swift in Sources */,
 				9272431D212147B800E9AD01 /* AppDelegate.swift in Sources */,
 				9272431F212147B800E9AD01 /* FirstViewController.swift in Sources */,
+				9289FC23212688740029265A /* SpeedViewController.swift in Sources */,
 				9229225021246DCD00992B66 /* Speed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
