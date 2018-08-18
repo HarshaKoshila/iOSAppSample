@@ -16,6 +16,15 @@ class TemperatureVeiwController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //these are using to hide keyboard
+        self.celsiusTextField.delegate = self as? UITextFieldDelegate
+        self.farTextField.delegate = self as? UITextFieldDelegate
+        self.kelvinTextField.delegate = self as? UITextFieldDelegate
+    }
+    
+    //Hide keyboard when user touches ouside keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {

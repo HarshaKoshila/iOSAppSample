@@ -17,7 +17,7 @@ class Temperature{
     }
     
     func celToFar() -> Double {
-        return (value*9/5)*32
+        return (value*9/5)+32
     }
     func CelToKel() -> Double {
         return value+273.15

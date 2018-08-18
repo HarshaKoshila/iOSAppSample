@@ -19,6 +19,18 @@ class DistanceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //these are using to hide keyboard
+        self.meterTextFiled.delegate = self as? UITextFieldDelegate
+        self.footTextField.delegate = self as? UITextFieldDelegate
+        self.yardTextField.delegate = self as? UITextFieldDelegate
+        self.kmTextField.delegate = self as? UITextFieldDelegate
+        self.mileTextField.delegate = self as? UITextFieldDelegate
+        
+    }
+    
+    //Hide keyboard when user touches ouside keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {

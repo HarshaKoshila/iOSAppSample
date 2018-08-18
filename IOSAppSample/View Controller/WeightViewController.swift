@@ -18,6 +18,17 @@ class WeightViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //these are using to hide keyboard
+        self.gramTextField.delegate = self as? UITextFieldDelegate
+        self.kilogramTextField.delegate = self as? UITextFieldDelegate
+        self.poundTextField.delegate = self as? UITextFieldDelegate
+        self.ounceTextField.delegate = self as? UITextFieldDelegate
+        
+    }
+    
+    //Hide keyboard when user touches ouside keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     func clear(){
